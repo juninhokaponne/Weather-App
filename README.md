@@ -3,3 +3,10 @@
 [Weather-App](https://weather-app-mu-nine.vercel.app/)
 
 ![app3](https://user-images.githubusercontent.com/49099875/88426673-fa50b280-cdc7-11ea-8df2-41a0365201a6.jpg)
+
+### Oque foi usado para este projeto
+
+- [x] HTML
+- [x] CSS
+- [x] JAVASCRIPT
+- [ ] JQUERY
