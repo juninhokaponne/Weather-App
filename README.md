@@ -9,4 +9,10 @@
 - [x] HTML
 - [x] CSS
 - [x] JAVASCRIPT
-- [ ] JQUERY
+
+### Como fazer para usar 
+
+Basta clonar a url do projeto :
+> https://github.com/juninhokaponne/Weather-App.git
+
+## E bora codar !
