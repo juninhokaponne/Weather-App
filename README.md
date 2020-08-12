@@ -1,4 +1,5 @@
 # Weather-App
+Está aplicação te mostra em real-time (tempo real) a previsão do tempo em qualquer cidade e pais !
 ## Veja este exemplo em ação no link abaixo
 [Weather-App](https://weather-app-mu-nine.vercel.app/)
 
