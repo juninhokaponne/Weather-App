@@ -11,6 +11,10 @@ Está aplicação te mostra em real-time (tempo real) a previsão do tempo em qu
 - [x] CSS
 - [x] JAVASCRIPT
 
+### Para usar um endereço web como este projeto nós usamos
+[Vercel](https://vercel.com/)
+ 
+ 
 ### Como usar 
 
 Basta clonar a url do projeto :
