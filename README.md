@@ -11,9 +11,8 @@ Está aplicação te mostra em real-time (tempo real) a previsão do tempo em qu
 - [x] CSS
 - [x] JAVASCRIPT
 
-### Como fazer para usar 
+### Como usar 
 
 Basta clonar a url do projeto :
 > https://github.com/juninhokaponne/Weather-App.git
-
 ## E bora codar !
