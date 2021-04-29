@@ -1,17 +1,17 @@
-/*SEARCH BY USING A CITY NAME (e.g. athens) OR A COMMA-SEPARATED CITY NAME ALONG WITH THE COUNTRY CODE (e.g. athens,gr)*/
+// Procurar por cidade usando nome 
 const form = document.querySelector(".top-banner form");
 const input = document.querySelector(".top-banner input");
 const msg = document.querySelector(".top-banner .msg");
 const list = document.querySelector(".ajax-section .cities");
-/*PUT YOUR OWN KEY HERE - THIS MIGHT NOT WORK
-SUBSCRIBE HERE: https://home.openweathermap.org/users/sign_up*/
+/* COLOQUE SUA PRÓPRIA CHAVE AQUI - ISSO PODE NÃO FUNCIONAR
+Link para usar -- https://home.openweathermap.org/users/sign_up*/
 const apiKey = "4d8fb5b93d4af21d66a2948710284366";
 
 form.addEventListener("submit", e => {
   e.preventDefault();
   let inputVal = input.value;
 
-  //check if there's already a city
+  //verifique se já existe uma cidade
   const listItems = list.querySelectorAll(".ajax-section .city");
   const listItemsArray = Array.from(listItems);
 
@@ -37,17 +37,17 @@ form.addEventListener("submit", e => {
     });
 
     if (filteredArray.length > 0) {
-      msg.textContent = `You already know the weather for ${
+      msg.textContent = `Você já sabe o tempo para ${
         filteredArray[0].querySelector(".city-name span").textContent
-      } ...otherwise be more specific by providing the country code as well 😉`;
+      } ...portanto, seja mais específico, fornecendo também o código do país 😉`;
       form.reset();
       input.focus();
       return;
     }
   }
-
+//pt_br Português Brasil
   //ajax here
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&lang=pt_br&appid=${apiKey}&units=metric`;
 
   fetch(url)
     .then(response => response.json())
@@ -76,7 +76,7 @@ form.addEventListener("submit", e => {
       list.appendChild(li);
     })
     .catch(() => {
-      msg.textContent = "Please search for a valid city 😩";
+      msg.textContent = "Por favor, procure uma cidade válida 😩";
     });
 
   msg.textContent = "";
